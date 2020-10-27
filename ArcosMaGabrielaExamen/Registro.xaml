@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArcosMaGabrielaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro" HorizontalOptions="Center" FontSize="Title"  TextColor="Red" VerticalOptions="Center"
+                   />
+            <Label x:Name="lblUser"  Text="Usuario Conectado es : " FontSize="Medium"></Label>
+            <Grid Margin="20 ,40,20,20" Padding="30,30,30,30" RowSpacing="5" ColumnSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50*" />
+                    <RowDefinition Height="50*" />
+                    <RowDefinition Height="50*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition  Width="0.5*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="NOMBRE"></Label>
+                <Label Grid.Row="1" Grid.Column="0" Text="MONTO INICAL"></Label>
+                <Label Grid.Row="2" Grid.Column="0" Text="PAGO MENSUAL"></Label>
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtNombre"></Entry>
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtMonto" Keyboard="Numeric"></Entry>
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtMensual" IsReadOnly="True" ></Entry>
+
+
+
+            </Grid>
+            <Button x:Name="BtnCalcular"
+                    Text="CALCULAR CUOTA"
+                    Clicked="BtnCalcular_Clicked">
+            </Button>
+
+            <Button x:Name="BtnGuardar"
+                    Text="GUARDAR"
+                    Clicked="BtnGuardar_Clicked">
+                
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

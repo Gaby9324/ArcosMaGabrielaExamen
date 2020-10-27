@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArcosMaGabrielaExamen.MainPage">
+
+    <StackLayout>
+
+        <Image Source="LOGOUISRAEL.png" HeightRequest="90"></Image>
+        <Label Text="LOGIN" FontSize="Title" TextColor="Red" 
+                HorizontalOptions="CenterAndExpand" />
+
+
+        <Entry x:Name="txtUsu" 
+                   Placeholder="Ingrese su usuario">
+        </Entry>
+
+        <Entry x:Name="txtPass" 
+                   Placeholder="Ingrese su Contraseña"
+                   IsPassword="True">
+        </Entry>
+
+
+        <Button x:Name="btnAbrir"
+                Text="Abrir"
+                Clicked="btnAbrir_Clicked">
+            
+        </Button>
+    </StackLayout>
+
+</ContentPage>

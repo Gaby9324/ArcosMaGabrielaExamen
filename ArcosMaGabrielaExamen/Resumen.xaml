@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ArcosMaGabrielaExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="RESUMEN"  FontSize="Title" TextColor="Red" VerticalOptions="Center"/>
+            <Grid Margin="20 ,40,20,20" Padding="30,30,30,30" RowSpacing="5" ColumnSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50*" />
+                    <RowDefinition Height="50*" />
+                    <RowDefinition Height="50*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*" />
+                    <ColumnDefinition  Width="0.5*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="NOMBRE"></Label>
+                <Label Grid.Row="1" Grid.Column="0" Text="MONTO INICAL"></Label>
+                <Label Grid.Row="2" Grid.Column="0" Text="PAGO MENSUAL"></Label>
+
+                <Label Grid.Row="0" Grid.Column="1" x:Name="lblNombre" ></Label>
+                <Label Grid.Row="1" Grid.Column="1" x:Name="lblMonto" ></Label>
+                <Label Grid.Row="2" Grid.Column="1" x:Name="lblCuota" ></Label>
+
+
+            </Grid>
+
+            <Button x:Name="btnSalir"
+                    Text="Cerrar Sesion"
+                    Clicked="btnSalir_Clicked">
+                
+            </Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
